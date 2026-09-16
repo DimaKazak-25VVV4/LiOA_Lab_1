@@ -4,8 +4,8 @@
 
 int main()
 {
-    int rows = 3, cols = 4;
-    int a[3][4];
+    int rows = 6, cols = 8;
+    int a[6][8];
     int i, j;
 
     srand((unsigned int)time(NULL));
@@ -22,7 +22,7 @@ int main()
     }
 
     printf("\nSumma po stolbtsam:\n");
-    for (j = 0; j < cols; j++)
+    for (j = 0; j < cols; j+=2)
     {
         int sum = 0;
         for (i = 0; i < rows; i++)
@@ -33,7 +33,7 @@ int main()
     }
 
     printf("\nSumma po strokam:\n");
-    for (i = 0; i < rows; i++)
+    for (i = 0; i < rows; i+=2)
     {
         int sum = 0;
         for (j = 0; j < cols; j++)
